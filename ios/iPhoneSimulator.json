@@ -1,0 +1,11 @@
+{
+    "platformName": "iOS",
+    "platformVersion": "17.0",
+    "deviceName": "CI iPhone 11",
+    "automationName": "XCUITest",
+    "app": "/Users/davidaldorf/Desktop/showmax_bs/showmax_main.app",
+    "newCommandTimeout": 360,
+    "autoAcceptAlerts": "true",
+    "autoDismissAlerts": "true",
+    "iosInstallPause": 1000
+}
