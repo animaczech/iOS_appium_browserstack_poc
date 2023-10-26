@@ -1,7 +1,7 @@
 import pytest
 import Locators
 
-@pytest.mark.usefixtures('driver')
+@pytest.mark.usefixtures('ios_driver')
 class TestSample_iOS:
     def is_element_visible(self, driver, element_id):
         try:
