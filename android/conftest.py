@@ -1,10 +1,8 @@
 import pytest
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-## Android
-#
+
 # Values based on documentation https://appium.readthedocs.io/en/stable/en/writing-running-appium/caps/
 def appium_options_android():
     options = {
@@ -16,20 +14,9 @@ def appium_options_android():
     }
     return options
 
-## Remote BrowserStack - uncomment this if you want to run tests on BS
-# @pytest.fixture(scope='function')
-# def android_driver(request, session_capabilities):
-#     remoteURL = "https://hub.browserstack.com/wd/hub"
-#     driver = webdriver.Remote(remoteURL, session_capabilities)
-#     request.node._driver = driver
-#     request.instance.driver = driver
-#     yield driver
-#     driver.quit()
 
-
-# Local BrowserStack - uncomment this if you want to run tests on iOS Simulator
 @pytest.fixture(scope='function')
-def driver():
+def android_driver():
     appium_service = AppiumService()
     appium_service.start()
 
@@ -39,3 +26,13 @@ def driver():
 
     driver.quit()
     appium_service.stop()
+
+
+@pytest.fixture(scope='function')
+def setWebdriver(request, session_capabilities):
+    remoteURL = "https://hub.browserstack.com/wd/hub"
+    driver = webdriver.Remote(remoteURL, session_capabilities)
+    request.node._driver = driver
+    request.instance.driver = driver
+    yield driver
+    driver.quit()
