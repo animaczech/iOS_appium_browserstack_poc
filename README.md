@@ -6,6 +6,7 @@
    1. https://www.browserstack.com/docs/app-automate/appium/getting-started/python/pytest
 4. Download & install [Appium inspector](https://github.com/appium/appium-inspector/releases)
 
+## Appium
 Now you should have your Appium setup and also PyCharm installed.
 1. run Appium server:
    1. Open Terminal -> and type:
@@ -26,22 +27,19 @@ Now you should have your Appium setup and also PyCharm installed.
   - _browserstack_ via [Tutorial Step 3.c](https://www.browserstack.com/docs/app-automate/appium/getting-started/python/pytest) and `BrowserStack_Readme.md`
 
 ## Simulator
-
+Make sure that `conftest.py` is settled for `Local Simulator. (uncomment the driver for Local Simulator and comment driver for Remote)
 in terminal:
 
 ```bash
 cd ios
+pytest
 ```
 or
 ```bash
 cd android
-```
-Make sure that `conftest.py` is settled for `Local Simulator.
-
-for all tests run: 
-```
 pytest
 ```
+
 ## Remote
 
 Make sure that `conftest.py` is settled for `Remote BrowserStack` (uncomment the driver for Remote Browserstack).
