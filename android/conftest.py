@@ -11,6 +11,7 @@ def appium_options_android():
         "appium:automationName": "UiAutomator2",
         "appium:app": "/Users/tomaskral/Workspace/ShowMax/android-showmax-main/app/build/intermediates/apk/staging/debug/app-staging-debug.apk",
         "appium:allowTestPackages": "true",
+        "appium:autoGrantPermissions": "true",
     }
     return options
 
