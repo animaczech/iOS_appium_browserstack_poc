@@ -19,9 +19,8 @@ def appium_options_ios():
     # Pass multiple arguments here
     options['processArguments'] = {
         'args': [
-            '-noappboy',
             '-signinPytest',
-            '-uitestrun',
+            '-noappboy',
             '-noapptrackingtransparency',
             '-noonetrust'
         ]
