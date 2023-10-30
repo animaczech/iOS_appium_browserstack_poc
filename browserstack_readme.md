@@ -49,13 +49,13 @@ Open `browserstack.yml` file in `android` folder for Android and `ios` folder fo
 - Run the below command to execute a Android test on BrowserStack AppAutomate:
     ```
     cd android
-    browserstack-sdk pytest -s bstack_sample.py
+    browserstack-sdk pytest -s test_sample.py
     ```
 
 - Run the below command to execute a iOS test on BrowserStack AppAutomate:
     ```
     cd ios
-    browserstack-sdk pytest -s bstack_sample.py
+    browserstack-sdk pytest -s test_sample.py
     ```
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
@@ -90,13 +90,13 @@ Open `browserstack.yml` file in `android` folder for Android and `ios` folder fo
 - Run the below command for Android: 
     ```
     cd android
-    browserstack-sdk pytest -s bstack_sample_local.py
+    browserstack-sdk pytest -s test_sample.py
     ```
 
 - Run the below command for iOS: 
     ```
     cd ios
-    browserstack-sdk pytest -s bstack_sample_local.py
+    browserstack-sdk pytest -s test_sample.py
     ```
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)

@@ -3,7 +3,7 @@
     "platformVersion": "17.0",
     "deviceName": "CI iPhone 11",
     "automationName": "XCUITest",
-    "app": "/Users/davidaldorf/Desktop/showmax_bs/showmax_main.app",
+    "app": "/Users/davidaldorf/browserstack/mobile-browserstack-poc/ios/showmax_main.app",
     "newCommandTimeout": 360,
     "autoAcceptAlerts": "true",
     "autoDismissAlerts": "true",

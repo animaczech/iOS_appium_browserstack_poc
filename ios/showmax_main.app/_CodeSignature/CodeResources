@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		iJG/OqFCrDkgL1/nTRf3ncO/QvM=
+		0DSDRfVvdBE59scvNzZtGjYP+bo=
 		</data>
 		<key>BrazeKit.bundle/Base.lproj/Localizable.strings</key>
 		<dict>
@@ -742,7 +742,7 @@
 		</data>
 		<key>Frameworks/Core.framework/Assets.car</key>
 		<data>
-		Sv3oQMaWAbQrrelxgFvsjJGMu2c=
+		/cXKBr5ynGyQuNXq9CFTAXq7wV4=
 		</data>
 		<key>Frameworks/Core.framework/BrazeKit.bundle/Base.lproj/Localizable.strings</key>
 		<dict>
@@ -1442,7 +1442,7 @@
 		</dict>
 		<key>Frameworks/Core.framework/BrazeUI.bundle/Assets.car</key>
 		<data>
-		lrrU304481eN5u2baz4R9QLAC5c=
+		WKVeLomD5oBFdKA2IUraz4bcgHY=
 		</data>
 		<key>Frameworks/Core.framework/BrazeUI.bundle/Base.lproj/ContentCardsLocalizable.strings</key>
 		<dict>
@@ -2826,7 +2826,7 @@
 		</dict>
 		<key>Frameworks/Core.framework/Core</key>
 		<data>
-		kVosN/ovnco7pxtaW2YZlgCXaSk=
+		zn3jW+QB7wDMnBZyTppl6hQoEGE=
 		</data>
 		<key>Frameworks/Core.framework/GoogleCastCoreResources.bundle/CastFrameworkDB.momd/CastFrameworkDB.mom</key>
 		<data>
@@ -5083,7 +5083,7 @@
 		</data>
 		<key>Frameworks/Core.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gENkrFCzrsImHdAiGEsl2J/hiQQ=
+		w5io6AUeajuAduCAFM064CXX8VA=
 		</data>
 		<key>Frameworks/Core.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -6332,7 +6332,7 @@
 		</data>
 		<key>Frameworks/Rest.framework/Assets.car</key>
 		<data>
-		fOCQ6do1x8NgIhCis5bD1zbbSe4=
+		px2buczoE1zVshqDZ2n4j5h9tf8=
 		</data>
 		<key>Frameworks/Rest.framework/BoxsetHeader.nib</key>
 		<data>
@@ -6428,7 +6428,7 @@
 		</data>
 		<key>Frameworks/Rest.framework/Rest</key>
 		<data>
-		A5hos5y1lKEg+bsw4WNL9T2n2vk=
+		w9VtSZPvUmCGwl+lowECHW5kE2A=
 		</data>
 		<key>Frameworks/Rest.framework/SettingsTableViewCell.nib</key>
 		<data>
@@ -6444,7 +6444,7 @@
 		</data>
 		<key>Frameworks/Rest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		L6UhdbHAotpJu4DYgwg3MLif21k=
+		RudWW2eUI8G6YH3eGUGHbOnJvEE=
 		</data>
 		<key>Frameworks/RxCocoa.framework/Info.plist</key>
 		<data>
@@ -6532,7 +6532,7 @@
 		</data>
 		<key>Frameworks/SHMUIKit.framework/Assets.car</key>
 		<data>
-		bikZae80NNj2c7xHfipHti0X7DI=
+		ioyjLlOeXu9IhIKTmcCIXGSrLTc=
 		</data>
 		<key>Frameworks/SHMUIKit.framework/HomeEventCell.nib</key>
 		<data>
@@ -6572,11 +6572,11 @@
 		</data>
 		<key>Frameworks/SHMUIKit.framework/SHMUIKit</key>
 		<data>
-		F4MCP07B34+CfOT1LmXzd32IANA=
+		Doj5JTi2iYGRDpZ8Nqh/vNE62fQ=
 		</data>
 		<key>Frameworks/SHMUIKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		wAInEi1T0//372LenvSXpWi29CM=
+		NE8Wv3W4axNkK3qIoep1kCbQhEA=
 		</data>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
 		<data>
@@ -8956,7 +8956,7 @@
 		</data>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/Assets.car</key>
 		<data>
-		PvEGfSRIjfZBH2aZMVJKVXEYk48=
+		ElkwsIltGPffjvUHAuBggGKK7ps=
 		</data>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/Info.plist</key>
 		<data>
@@ -8964,7 +8964,7 @@
 		</data>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		2x3axvl2ZtOG7sZaxyd1s036YLU=
+		bGzDGhWD3bpyv/P+eKZPTWYLdaI=
 		</data>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/en.lproj/Localizable.strings</key>
 		<dict>
@@ -8977,7 +8977,7 @@
 		</dict>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/showmax_continueWatchingWidgetExtension</key>
 		<data>
-		XY01xaoDwjKxZaSF+uiuaOOr3fI=
+		kNwAoMA14KafixfcTUtgBXGFaoY=
 		</data>
 		<key>PlugIns/showmax_serviceNotificationExtension.appex/Info.plist</key>
 		<data>
@@ -9030,7 +9030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/T5IHs4yRORmrW3tZTH2cNiLwTQoGzg30RML4TAhumo=
+			ViqSHXL9CjpYpSHM9iNJgXW2WcCLe7zk/UyUNMZM9j8=
 			</data>
 		</dict>
 		<key>BrazeKit.bundle/Base.lproj/Localizable.strings</key>
@@ -9777,7 +9777,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yz66Odg3Z/jNddjyFvpCgeTpaGFH2Ugx5qpooXB3siY=
+			SoZHFTlt4GGAu/Vgaec5XYfbgGSv256PidVsFiAONrQ=
 			</data>
 		</dict>
 		<key>Frameworks/Core.framework/BrazeKit.bundle/Base.lproj/Localizable.strings</key>
@@ -10489,7 +10489,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			npNKWkSF+AP0SRnmxV6AArd5xMDZ2e3xzO6TXqwUGno=
+			w86hFkvAw0rWdxnKA0EXVsw6AtP7iHjPBE0fxQRGTcU=
 			</data>
 		</dict>
 		<key>Frameworks/Core.framework/BrazeUI.bundle/Base.lproj/ContentCardsLocalizable.strings</key>
@@ -11885,7 +11885,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hOa981j18Re68jpk5RlbEHKN6ngHINdqzO1xVIVqil4=
+			NIibgY963ADkL+ZUVqeWMPuE4xrvIVZdQPr3JtMv2/o=
 			</data>
 		</dict>
 		<key>Frameworks/Core.framework/GoogleCastCoreResources.bundle/CastFrameworkDB.momd/CastFrameworkDB.mom</key>
@@ -14505,7 +14505,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQK/2K6YOlxBBjJBA8r6wv/0M0Gam0E7P3G2EcTKEeo=
+			p8BJvZGz/f1u+DeIcApjKs5P9pwQuVu6as+wDH38/68=
 			</data>
 		</dict>
 		<key>Frameworks/Core.framework/en.lproj/Localizable.strings</key>
@@ -16387,7 +16387,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X4RdCq3r12k9enlub70qbbfmygU5ksMA6GpGjtviJvA=
+			l08fL0PwoVkuc8bsR4EkjzSYOu4HH3RgkcHDyPsIXpc=
 			</data>
 		</dict>
 		<key>Frameworks/Rest.framework/BoxsetHeader.nib</key>
@@ -16555,7 +16555,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EpxB5lrx/LqcLuhAROngus3AKZ5bmT/hvbaFSV4tFzk=
+			OmdFmz/3DQIQELh3n5GEKSxXmmJYFvM4+8BFHw5g2i4=
 			</data>
 		</dict>
 		<key>Frameworks/Rest.framework/SettingsTableViewCell.nib</key>
@@ -16583,7 +16583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dg8P+/2KLq/rhN5S4hjyffDUWHWiQCKjFuOCIuA9R8M=
+			kWv7rCkXX6pTa1Wf2wo9/DnkIMpVfp29YSe02RptgV4=
 			</data>
 		</dict>
 		<key>Frameworks/RxCocoa.framework/Info.plist</key>
@@ -16737,7 +16737,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9u4hzqKUzwYm4RoAesT+Zqz5mqrioFXgSxvdf1lZZtE=
+			SUeMD7T5LX2q7lSSo1UG421x/pmpm9EQtKGQhos2XtU=
 			</data>
 		</dict>
 		<key>Frameworks/SHMUIKit.framework/HomeEventCell.nib</key>
@@ -16807,14 +16807,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			noT6RNiKCoKJcAHAOoqhqSKxu1YyTuO+eeYk/JVq8Nc=
+			DN/XR7/gJdb/7x3pHNgHE/T9TiAJAZM0Rz5mCLuk9CE=
 			</data>
 		</dict>
 		<key>Frameworks/SHMUIKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ajKwmuiYvrCPUnMITKNS+oaJAvnL7P8D+2gYzppNfO8=
+			L/zRABKdM/BMJsXoh8ho5T2dENegbHWFb0Sy2DTN2wI=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
@@ -19615,7 +19615,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Az+ZYtDhlkMwwQJx5oZh8qyVvBrbcbiFx8KJumlFvV0=
+			+ZMkg/feDB6ueBmOZ8hkVzxBMsynuSPw3HFFc71W2e8=
 			</data>
 		</dict>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/Info.plist</key>
@@ -19629,7 +19629,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBk2dVghp+FAc0zt+Fti2m4e0obU6KaH09gx1Vp5HCM=
+			ptPMme+ARvmXyLnI7xZ62JcBodrhdbyItfXFB0THMFw=
 			</data>
 		</dict>
 		<key>PlugIns/showmax_continueWatchingWidgetExtension.appex/en.lproj/Localizable.strings</key>
@@ -19645,7 +19645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qstc9RbwYb/ZZxRAtkhvDT+n5ywfLHw5wRzn2y0Quow=
+			mfnsW8GDsuiv6a+tl/QL2gBjAQWDekaCWYdwIQjNHYE=
 			</data>
 		</dict>
 		<key>PlugIns/showmax_serviceNotificationExtension.appex/Info.plist</key>
