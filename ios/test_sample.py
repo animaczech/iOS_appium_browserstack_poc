@@ -5,24 +5,21 @@ import Locators
 @pytest.mark.usefixtures('ios_driver')
 class TestSample_iOS:
     def test_health_check(self, ios_driver):
-        close_button = Helpers_iOS().getElement("Close")
-        if not close_button.is_displayed():
-            close_button.click()
-        item = Helpers_iOS().scrollToElement("Home")
+        item = Helpers_iOS().scrollToElement(ios_driver, "home_row")
         assert item.is_displayed()
 
 @pytest.mark.usefixtures('ios_driver')
 class Helpers_iOS:
-    def getElement(ios_driver, accessibilityID):
+    def getElement(self, ios_driver, accessibilityID):
         return ios_driver.find_element(MobileBy.ACCESSIBILITY_ID, accessibilityID)
 
-    def isElementVisible(ios_driver, accessibilityID):
-        element = ios_driver.getElement(MobileBy.ACCESSIBILITY_ID, accessibilityID)
+    def isElementVisible(self, ios_driver, accessibilityID):
+        element = self.getElement(ios_driver, accessibilityID)
         return element.is_displayed()
 
     def scrollToElement(self, ios_driver, accessibilityID, maxCount = 10):
         # Find the element by accessibility ID
-        element = self.getElement(accessibilityID)
+        element = self.getElement(ios_driver, accessibilityID)
         # Check if the element is visible on the screen
         if not element.is_displayed():
             # If not, use the driver's swipe method to perform a swipe gesture until the element is visible
@@ -36,7 +33,7 @@ class Helpers_iOS:
             # Perform the swipe gesture until the element is visible or a maximum of 10 times
             count = 0
             while not element.is_displayed() and count < maxCount:
-                ios_driver.swipe(start_x, start_y, end_x, end_y, duration=1000)
+                self.ios_driver.swipe(start_x, start_y, end_x, end_y, duration=1000)
                 count += 1
         # Return the element
         return element

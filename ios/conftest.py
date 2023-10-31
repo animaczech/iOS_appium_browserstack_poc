@@ -17,14 +17,15 @@ def appium_options_ios():
     options['launchTimeout'] = 8000
     options['autoAcceptAlerts'] = "true"
     # Pass multiple arguments here
-    options['processArguments'] = {
-        'args': [
-            '-signinPytest',
-            '-noappboy',
-            '-noapptrackingtransparency',
-            '-noonetrust'
-        ]
-    }
+    ## TODO: -DA, MS- workaround process arguments
+    # options['processArguments'] = {
+    #     'args': [
+    #         '-signinPytest',
+    #         '-noappboy',
+    #         '-noapptrackingtransparency',
+    #         '-noonetrust'
+    #     ]
+    # }
 
     return options
 
