@@ -32,6 +32,8 @@ def android_driver():
 @pytest.fixture(scope='function')
 def setWebdriver(request, session_capabilities):
     remoteURL = "https://hub.browserstack.com/wd/hub"
+    session_capabilities["build"] = os.getenv("BROWSERSTACK_BUILD_NAME")
+    session_capabilities["browserstack.localIdentifier"] = os.getenv("BROWSERSTACK_LOCAL_IDENTIFIER")
     driver = webdriver.Remote(remoteURL, session_capabilities)
     request.node._driver = driver
     request.instance.driver = driver
