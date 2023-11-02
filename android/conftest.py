@@ -1,4 +1,5 @@
 import pytest
+import os
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
 
