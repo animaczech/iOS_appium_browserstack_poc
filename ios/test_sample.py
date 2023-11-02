@@ -33,7 +33,7 @@ class Helpers_iOS:
             # Perform the swipe gesture until the element is visible or a maximum of 10 times
             count = 0
             while not element.is_displayed() and count < maxCount:
-                self.ios_driver.swipe(start_x, start_y, end_x, end_y, duration=1000)
+                ios_driver.swipe(start_x, start_y, end_x, end_y, duration=1000)
                 count += 1
         # Return the element
         return element
