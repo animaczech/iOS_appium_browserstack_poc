@@ -26,7 +26,7 @@ framework: pytest
 
 source: pytest-appium-browserstack:sample-sdk:v1.0
 
-app: ./showmax.ipa
+app: ./Showmax.ipa
 #app: ./LocalSample.ipa #For running local tests
 
 # =======================================
