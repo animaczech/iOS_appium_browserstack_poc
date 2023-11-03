@@ -5,9 +5,19 @@ import Locators
 @pytest.mark.usefixtures('ios_driver')
 class TestSample_iOS:
     def test_health_check(self, ios_driver):
-        ios_driver.find_element(MobileBy.NAME, "Allow").click()
         item = Helpers_iOS().scrollToElement(ios_driver, "home_row")
         assert item.is_displayed()
+
+    def test_open_movies_grid(self, ios_driver):
+        movies = Helpers_iOS().scrollToElement(ios_driver, "Movies")
+        assert movies.is_displayed()
+        movies.click()
+
+        all_movies = Helpers_iOS().getElement(ios_driver, "CuratedBrowse_allMovies")
+        all_movies.click()
+
+        grid_screen = Helpers_iOS().getElement(ios_driver, "Screen.Grid")
+        assert grid_screen.is_displayed()
 
 @pytest.mark.usefixtures('ios_driver')
 class Helpers_iOS:
