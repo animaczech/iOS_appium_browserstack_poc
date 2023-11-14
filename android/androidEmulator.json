@@ -1,7 +1,10 @@
+// You can use this file in Appium inspector
+// Make sure to update necessary capabilities down bellow
 {
-  "appium:deviceName": "UI TESTS - Pixel 4 API 29",
+  "appium:deviceName": "EMULATOR_NAME",
   "platformName": "android",
   "appium:automationName": "UiAutomator2",
-  "appium:app": "/Users/tomaskral/Workspace/ShowMax/android-showmax-main/app/build/intermediates/apk/staging/debug/app-staging-debug.apk",
-  "appium:allowTestPackages": "true"
+  "appium:app": "/PATH_TO_APK/APK_NAME.apk",
+  "appium:allowTestPackages": "true",
+  "appium:autoGrantPermissions": "true"
 }

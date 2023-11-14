@@ -8,9 +8,7 @@ from appium.webdriver.common.appiumby import AppiumBy
 class TestSample:
 
     def test_health_check(self, android_driver):
-
         profile_name = android_driver.find_element(AppiumBy.ID, "com.showmax.app.staging.debug:id/customTitle")
-
-        assert profile_name.text == "Standard pro"
+        assert profile_name.text == "Title"
 
 

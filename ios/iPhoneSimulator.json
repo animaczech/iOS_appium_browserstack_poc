@@ -1,9 +1,11 @@
+// You can use this file in Appium inspector
+// Make sure to update necessary capabilities down bellow
 {
     "platformName": "iOS",
     "platformVersion": "17.0",
-    "deviceName": "CI iPhone 11",
+    "deviceName": "SIMULATOR_NAME",
     "automationName": "XCUITest",
-    "app": "/Users/davidaldorf/browserstack/mobile-browserstack-poc/ios/showmax_main.app",
+    "app": "/PATH_TO_YOUR_APP/YOUR_APP_NAME.app",
     "newCommandTimeout": 360,
     "autoAcceptAlerts": "true",
     "autoDismissAlerts": "true",

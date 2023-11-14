@@ -1,22 +1,32 @@
 ## Setup
 
-1. I'd recommend using [PyCharm](https://www.jetbrains.com/pycharm/) as IDE.
-2. Accept invitation via this [link](https://accounts.browserstack.com/jointeam/2dfe1b7563b8ca458b8abaa1463176d8 ).
+ - [Python3, pip & Node](https://pip.pypa.io/en/stable/getting-started/)
+ - [Node.js, npm](https://formulae.brew.sh/formula/node)
+ - [appium](https://appium.io/docs/en/2.1/quickstart/install/)
+
+
+1. I'd recommend using any Python focused IDE e.g. [PyCharm](https://www.jetbrains.com/pycharm/)
+2. Create a BrowserStack account  [link](https://www.browserstack.com/users/sign_up).
 3. Follow this tutorial to install all requirements
    1. https://www.browserstack.com/docs/app-automate/appium/getting-started/python/pytest
 4. Download & install [Appium inspector](https://github.com/appium/appium-inspector/releases)
+5. Install necessary Appium drivers for iOS and Android:
+   ```shell
+    appium driver install xcuitest
+    appium driver install uiautomator2
+   ```
 
 ## Appium
 Now you should have your Appium setup and also PyCharm installed.
 1. run Appium server:
    1. Open Terminal -> and type:
-   ```
+   ```shell
    appium
    ```
     + _Be careful about the port what Appium is using (127.0.0.1:4723)_
     + _Make sure Port is free - if not kill the process or use any other free port e.g. 127.0.0.1:4725_
 
-2. Set project environment same as Tutorial:
+2. Set project environment:
     ```bash
     python3 -m venv env
     source env/bin/activate
@@ -32,12 +42,12 @@ in terminal:
 
 ```bash
 cd ios
-pytest
+pytest -s test_sample.py
 ```
 or
 ```bash
 cd android
-pytest
+pytest -s test_sample.py
 ```
 
 ## Remote
@@ -70,10 +80,10 @@ To run Appium inspector you need to specify capabilities to run simulators on An
 {
     "platformName": "iOS",
     "platformVersion": "17.0",
-    "deviceName": "CI iPhone 11", // Name of your iOS simulator
+    "deviceName": "SIMULATOR_NAME", // Name of your iOS simulator
     "automationName": "XCUITest",
     // change the path according to your *.app (located in DerivedData when you build an App)
-    "app": "PATH_TO_BS_FOLDER/showmax_main.app",
+    "app": "PATH_TO_APP/APP_NAME.app",
     "newCommandTimeout": 360,
     "autoAcceptAlerts": "true",
     "autoDismissAlerts": "true",
@@ -89,10 +99,12 @@ note: Where to find *.app file:
 `AndroidEmulator.json`
 ```json
 {
-  "appium:deviceName": "UI TESTS - Pixel 4 API 29", // Name of your iOS simulator
+  "appium:deviceName": "EMULATOR_NAME",
   "platformName": "android",
   "appium:automationName": "UiAutomator2",
-  "appium:app": "PATH_TO_PROJECT_FOLDER/android-showmax-main/app/build/intermediates/apk/staging/debug/app-staging-debug.apk",
+  "appium:app": "PATH_TO_APK/APK_NAME.apk",
   "appium:allowTestPackages": "true"
 }
 ```
+
+More information

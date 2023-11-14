@@ -8,9 +8,9 @@ from appium.webdriver.appium_service import AppiumService
 def appium_options_android():
     options = {
         "platformName": "android",
-        "appium:deviceName": "Pixel_XL_API_34",  # Name of the Emulator
+        "appium:deviceName": "EMULATOR_NAME",  # Name of the Emulator
         "appium:automationName": "UiAutomator2",
-        "appium:app": "/Users/tomaskral/Workspace/ShowMax/android-showmax-main/app/build/intermediates/apk/staging/debug/app-staging-debug.apk",
+        "appium:app": "/PATH_TO_APK/APK_NAME.apk",
         "appium:allowTestPackages": "true",
         "appium:autoGrantPermissions": "true",
     }
@@ -33,8 +33,6 @@ def android_driver():
 @pytest.fixture(scope='function')
 def setWebdriver(request, session_capabilities):
     remoteURL = "https://hub.browserstack.com/wd/hub"
-    session_capabilities["build"] = os.getenv("BROWSERSTACK_BUILD_NAME")
-    session_capabilities["browserstack.localIdentifier"] = os.getenv("BROWSERSTACK_LOCAL_IDENTIFIER")
     driver = webdriver.Remote(remoteURL, session_capabilities)
     request.node._driver = driver
     request.instance.driver = driver

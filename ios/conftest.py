@@ -11,21 +11,11 @@ def appium_options_ios():
     options = DesiredCapabilities.IPHONE
     options['platformName'] = 'iOS'
     options['platformVersion'] = '17.0' # Update this to your iOS version
-    options['deviceName'] = 'CI iPhone 11'  # Update this to your device
+    options['deviceName'] = 'SIMULATOR_NAME'  # Update this to your device
     options['automationName'] = 'XCUITest'
-    options['app'] = '/Users/davidaldorf/browserstack/mobile-browserstack-poc/ios/showmax_main.app'  # Update this to your app path
-    options['launchTimeout'] = 8000
+    options['app'] = '/PATH_TO_YOUR_APP/YOUR_APP_NAME.app'  # Update this to your app path
+    options['launchTimeout'] = 8000 # Update this according to your app runtime
     options['autoAcceptAlerts'] = "true"
-    # Pass multiple arguments here
-    ## TODO: -DA, MS- workaround process arguments
-    # options['processArguments'] = {
-    #     'args': [
-    #         '-signinPytest',
-    #         '-noappboy',
-    #         '-noapptrackingtransparency',
-    #         '-noonetrust'
-    #     ]
-    # }
 
     return options
 
@@ -33,6 +23,7 @@ def appium_options_ios():
 @pytest.fixture(scope='function')
 def ios_driver(request, session_capabilities):
     remoteURL = "https://hub.browserstack.com/wd/hub"
+    session_capabilities['browserstack.autoDismissAlerts'] = True
     driver = webdriver.Remote(remoteURL, session_capabilities)
     request.instance.driver = driver
     request.node._driver = driver
