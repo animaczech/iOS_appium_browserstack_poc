@@ -1,9 +1,9 @@
 {
     "platformName": "iOS",
-    "platformVersion": "17.0",
-    "deviceName": "CI iPhone 11",
+    "platformVersion": "17.0.1",
+    "deviceName": "iPhone 15.0",
     "automationName": "XCUITest",
-    "app": "/Users/davidaldorf/browserstack/mobile-browserstack-poc/ios/showmax_main.app",
+    "app": "/Users/tony/Library/Developer/Xcode/DerivedData/BookMax-bigrrrmopmxwychcpouexwqhkruv/Build/Products/Debug-iphonesimulator/BookMax.app",
     "newCommandTimeout": 360,
     "autoAcceptAlerts": "true",
     "autoDismissAlerts": "true",
