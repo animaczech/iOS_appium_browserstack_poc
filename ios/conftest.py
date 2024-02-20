@@ -18,17 +18,6 @@ def appium_options_ios():
     options['autoAcceptAlerts'] = "true"
     return options
 
-## Remote BrowserStack - uncomment this if you want to run tests on BS
-# @pytest.fixture(scope='function')
-# def ios_driver(request, session_capabilities):
-#     remoteURL = "https://hub.browserstack.com/wd/hub"
-#     driver = webdriver.Remote(remoteURL, session_capabilities)
-#     request.instance.driver = driver
-#     request.node._driver = driver
-#     yield driver
-#     driver.quit()
-
-# Local Simulator - uncomment this if you want to run tests on iOS Simulator
 @pytest.fixture(scope='function')
 def ios_driver():
     appium_service = AppiumService()

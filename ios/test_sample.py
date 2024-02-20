@@ -5,19 +5,27 @@ import Locators
 @pytest.mark.usefixtures('ios_driver')
 class TestSample_iOS:
     def test_health_check(self, ios_driver):
-        item = Helpers_iOS().scrollToElement(ios_driver, "home_row")
-        assert item.is_displayed()
+        logo = Helpers_iOS().getElement(ios_driver, "logo_image")
+        assert logo.is_displayed()
 
-    def test_open_movies_grid(self, ios_driver):
-        movies = Helpers_iOS().scrollToElement(ios_driver, "Movies")
-        assert movies.is_displayed()
-        movies.click()
+    def test_login_screen(self, ios_driver):
+        elements = ["welcome_message", "username_input", "password_input", "login_button", "login_button_for_debug"]
 
-        all_movies = Helpers_iOS().getElement(ios_driver, "CuratedBrowse_allMovies")
-        all_movies.click()
+        for element in elements:
+            assert Helpers_iOS().getElement(ios_driver,element).is_displayed()
 
-        grid_screen = Helpers_iOS().getElement(ios_driver, "Screen.Grid")
-        assert grid_screen.is_displayed()
+    def test_successful_login(self, ios_driver):
+        username_field = Helpers_iOS().getElement(ios_driver, "username_input")
+        password_field = Helpers_iOS().getElement(ios_driver, "password_input")
+        login_button = Helpers_iOS().getElement(ios_driver, "login_button")
+
+        username_field.send_keys("apple")
+        password_field.send_keys("laxative98d#2")
+
+        login_button.click()
+
+        assert Helpers_iOS().isElementVisible(ios_driver, "current_time")
+
 
 @pytest.mark.usefixtures('ios_driver')
 class Helpers_iOS:

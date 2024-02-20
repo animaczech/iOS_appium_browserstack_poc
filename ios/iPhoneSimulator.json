@@ -1,7 +1,7 @@
 {
     "platformName": "iOS",
-    "platformVersion": "17.0.1",
-    "deviceName": "iPhone 15.0",
+    "platformVersion": "17.0",
+    "deviceName": "Test",
     "automationName": "XCUITest",
     "app": "/Users/tony/Library/Developer/Xcode/DerivedData/BookMax-bigrrrmopmxwychcpouexwqhkruv/Build/Products/Debug-iphonesimulator/BookMax.app",
     "newCommandTimeout": 360,
