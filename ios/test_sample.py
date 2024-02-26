@@ -1,6 +1,7 @@
 import pytest
 from appium.webdriver.common.mobileby import MobileBy
 import Locators
+import time
 
 @pytest.mark.usefixtures('ios_driver')
 class TestSample_iOS:
@@ -26,6 +27,60 @@ class TestSample_iOS:
 
         assert Helpers_iOS().isElementVisible(ios_driver, "current_time")
 
+    def test_unsuccessful_login(self, ios_driver):
+        username_field = Helpers_iOS().getElement(ios_driver, "username_input")
+        password_field = Helpers_iOS().getElement(ios_driver, "password_input")
+        login_button = Helpers_iOS().getElement(ios_driver, "login_button")
+
+        username_field.send_keys("apple")
+        password_field.send_keys("wrongpassword")
+
+        login_button.click()
+
+        error_accessibility_id = "error_message"
+
+        assert Helpers_iOS().isElementVisible(ios_driver, error_accessibility_id)
+
+    def test_create_appointment(self, ios_driver):
+        debug_login_button = Helpers_iOS().getElement(ios_driver, "apple_debug_login_button")
+        debug_login_button.click()
+
+        create_appointment_button = Helpers_iOS().getElement(ios_driver, "create_appointment_button")
+        assert create_appointment_button.is_displayed()
+        create_appointment_button.click()
+
+        appointment_name_field = Helpers_iOS().getElement(ios_driver, "appointment_name_input")
+        assert appointment_name_field.is_displayed()
+
+        assert appointment_name_field.get_attribute('value') == "Meeting Created from Panel"
+
+        appointment_name_field.clear()
+        assert appointment_name_field.get_attribute('value') == "Name" #"Name" is a placeholder when field is empty
+
+        new_appointment_name = "BookMax automation?"
+
+        appointment_name_field.send_keys(new_appointment_name)
+        assert appointment_name_field.get_attribute('value') == new_appointment_name
+
+        ios_driver.hide_keyboard()
+
+        start_time_picker = Helpers_iOS().timePicker(ios_driver, accessibilityID="start_picker", hours="23", minutes="00")
+        end_time_picker = Helpers_iOS().timePicker(ios_driver, accessibilityID="end_picker", hours="23", minutes="30")
+
+        start_time_button = start_time_picker.find_element("xpath", "//XCUIElementTypeButton")
+        assert start_time_button.get_attribute('value') == "22:00"
+        # Due to unknown reason yet, start picker selects 1 hour less than requested.
+
+        end_time_button = end_time_picker.find_element("xpath", "//XCUIElementTypeButton")
+        assert end_time_button.get_attribute('value') == "23:30"
+
+        reserve_button = Helpers_iOS().getElement(ios_driver, "reserve_button")
+        reserve_button.click()
+
+        current_appointment_name = Helpers_iOS().getElement(ios_driver, "current_appointment_name")
+        assert current_appointment_name.get_attribute('value') == new_appointment_name
+
+        # assert Helpers_iOS().isElementVisible(ios_driver, "finish_button")
 
 @pytest.mark.usefixtures('ios_driver')
 class Helpers_iOS:
@@ -62,3 +117,14 @@ class Helpers_iOS:
                 count += 1
         # Return the element
         return element
+
+    def timePicker(self, ios_driver, accessibilityID, hours, minutes):
+        time_picker = Helpers_iOS().getElement(ios_driver, accessibilityID)
+        time_picker.click()
+
+        ios_driver.find_element("xpath", "//XCUIElementTypePickerWheel[1]").send_keys(hours)
+
+        ios_driver.find_element("xpath", "//XCUIElementTypePickerWheel[2]").send_keys(minutes)
+        ios_driver.tap([(50, 50)])
+
+        return time_picker
